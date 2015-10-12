@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0-*",
+  "description": "AzureUploader Console Application",
+  "authors": [ "soshir" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Microsoft.Framework.CommandLineUtils.Sources": { "version": "1.0.0-*", "type": "build" },
+    "Microsoft.Dnx.Runtime.Abstractions": "1.0.0-beta8-*",
+    "Newtonsoft.Json": "7.0.1",
+    "WindowsAzure.Storage": "6.0.1-preview",
+    "Microsoft.Framework.Configuration.Json": "1.0.0-beta8",
+    "Microsoft.Framework.Configuration.UserSecrets": "1.0.0-beta8",
+    "Microsoft.Framework.Configuration.EnvironmentVariables": "1.0.0-beta8",
+    "Microsoft.Dnx.Runtime": "1.0.0-beta8"
+  },
+
+  "commands": {
+    "test": "AzureUploader test",
+    "upload": "AzureUploader upload",
+    "list": "AzureUploader list",
+    "json": "AzureUploader json"
+  },
+
+  "frameworks": {
+    "dnx451": {
+    },
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-*",
+        "System.Collections": "4.0.11-*",
+        "System.Console": "4.0.0-*",
+        "System.Linq": "4.0.1-*",
+        "System.Threading": "4.0.11-*",
+        "System.IO.FileSystem": "4.0.1-*" 
+      }
+    }
+  }
+}
